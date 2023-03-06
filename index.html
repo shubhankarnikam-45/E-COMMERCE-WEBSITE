@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeShop.</title>
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <!-- project link -->
+    <!-- https://docs.google.com/document/d/1KxmrO2DbM7pGqlBpn2cvpcoh-XoGtLoy3vihVyImZRE/edit -->
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="index.html">Home</a>
+        <a href="./login.html">Login</a>
+        <a href="./signup.html">Signup</a>
+        <a href="#">My Cart</a>
+   
+      </div>
+    </nav>
+
+
+    <section class="main-content">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5">
+                        <h1 class="heading-1">MeShop</h1>
+                        <p class="para">Your First Shop built on HTML,CSS and JAVASCRIPT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5">
+                        <button onclick="loginPage()" class="main-btn">Login<i
+                            class="fa-solid fa-basket-shopping-simple"></i></button>
+                          <button onclick="signUp()" class="white-btn ms-lg-4 mt-0-lg mt-4">Sign Up</button>
+
+                          <div>
+                            <div class="item">
+                                <img src="tshirt.png" alt="Item" />
+                                <div class="info">
+                                  <div class="row">
+                                    <div class="price">$100</div>
+                                    <div class="sized">S,M,L</div>
+                                  </div>
+                                  <div class="colors">
+                                    Colors:
+                                    <div class="row">
+                                      <div class="circle" style="background-color: #000"></div>
+                                      <div class="circle" style="background-color: #4938af"></div>
+                                      <div class="circle" style="background-color: #203d3e"></div>
+                                    </div>
+                                  </div>
+                                  <div class="row">Rating:</div>
+                                </div>
+                                <button id="addBtn">Add to Cart</button>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5">
+                        <img src="./landingPagePic.png" alt="landing-page" class="src">
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="main">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
